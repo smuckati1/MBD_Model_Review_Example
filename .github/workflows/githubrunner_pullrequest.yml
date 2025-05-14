@@ -7,9 +7,10 @@ on:
 
   pull_request:
     branches: [ main ]
-env:
-  MLM_LICENSE_TOKEN: ${{ secrets.myMATLABenv.MYMATLABTOKEN }}
-  
+#env:
+  #MLM_LICENSE_TOKEN: ${{ secrets.myMATLABenv.MYMATLABTOKEN }}
+environment: myMATLABenv
+
 jobs:
   my-job:
     name: Diff to Ancestor, Publish and attach Report, and Craete Webview
