@@ -1,4 +1,3 @@
-
 name: PullRequest GitHub Runner - Diff to Ancestor, Publish and attach Report, and Run Project Tests
 
 # Controls when the workflow will run
