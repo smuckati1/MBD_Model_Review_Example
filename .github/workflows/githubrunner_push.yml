@@ -14,7 +14,7 @@ jobs:
   my-job:
     name: Diff to Ancestor, Publish and attach Report, and Craete Webview
     runs-on: ubuntu-latest
-    environment: myMATLABenv
+    environment: myMATLABenv # This links the job to the environment
     env:
       MLM_LICENSE_TOKEN: ${{ secrets.MLM_LICENSE_TOKEN }}  # Uses the environment secret
 
