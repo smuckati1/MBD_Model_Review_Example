@@ -29,7 +29,7 @@ jobs:
             Simulink_Report_Generator
             MATLAB_Report_Generator
           cache: true
-          version: R2024b  
+          release: R2024b  
       - name: Start display server
         run: |
          sudo apt-get install -y xvfb
