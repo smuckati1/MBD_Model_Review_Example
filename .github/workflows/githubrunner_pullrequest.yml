@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 #env:
   #MLM_LICENSE_TOKEN: ${{ secrets.myMATLABenv.MYMATLABTOKEN }}
-environment: myMATLABenv
+env: myMATLABenv
 
 jobs:
   my-job:
