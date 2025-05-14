@@ -15,6 +15,9 @@ jobs:
     name: Diff to Ancestor, Publish and attach Report, and Craete Webview
     runs-on: ubuntu-latest
     environment: myMATLABenv
+    env:
+      MLM_LICENSE_TOKEN: ${{ secrets.MLM_LICENSE_TOKEN }}  # Uses the environment secret
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -39,7 +42,7 @@ jobs:
         uses: matlab-actions/run-command@v2
         with:
           command: branch ="${{ github.head_ref }}", diffGitHub_pullrequest(branch)
-      - name: Crete Project Webview
+      - name: Create Project Webview
         uses: matlab-actions/run-command@v2
         with:
           command: genWebView
